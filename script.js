@@ -4,8 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
 var _CONTENT = [ 
 	"SOFTWARE ENGINEER", 
-	"FRONT-END DEVELOPER", 
-	"BUSINESS APP DEVELOPER"
+	"BACK-END DEVELOPER", 
+	"ANDROID APP DEVELOPER",
+	"JAVA PROGRAMMER",
+	"WEB DEVELOPER",
+	"PROGRAMMING INSTRUCTOR"
 ];
 
 var _PART = 0; // Current sentence being processed
@@ -24,7 +27,7 @@ function Type() {
 	// If full sentence has been displayed then start to delete the sentence after some time
 	if(text === _CONTENT[_PART]) {
 		// Hide the cursor
-		_CURSOR.style.display = 'none';
+		_CURSOR.style.display = 'block';
 
 		clearInterval(_INTERVAL_VAL);
 		setTimeout(function() {
@@ -53,7 +56,7 @@ function Delete() {
 
 		// Start to display the next sentence after some time
 		setTimeout(function() {
-			_CURSOR.style.display = 'inline-block';
+			_CURSOR.style.display = 'block';
 			_INTERVAL_VAL = setInterval(Type, 100);
 		}, 200);
 	}
