@@ -1,3 +1,6 @@
+document.getElementById("open-resume").addEventListener("click",function(){
+	window.open("resume.pdf","_blank");});
+
 document.addEventListener('DOMContentLoaded', function() {
     const skillIcons = document.querySelectorAll('.skill-icons i');
     const seasonalBanner = document.getElementById('seasonalBanner');
